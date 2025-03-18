@@ -11,6 +11,18 @@ Ce projet est un site vitrine développé selon les principes de l'éco-concepti
 5. **Mise en Cache** : Mise en œuvre de stratégies de mise en cache efficaces pour minimiser les requêtes serveur et améliorer les temps de chargement.
 6. **Design Réactif** : Assurer que le site est accessible et performant sur tous les appareils, réduisant ainsi le besoin de versions multiples du site.
 
+## Stack Utilisée
+- **HTML & CSS** : Utilisation maximale de HTML et CSS natifs pour les composants tels que les champs de recherche, les accordéons, le lazy loading, les carrousels et le mode sombre.
+- **JavaScript** : Utilisation minimale de JavaScript pour les interactions nécessaires.
+- **Librairies Externes** : Utilisation minimale de librairies externes pour réduire la dépendance et améliorer les performances.
+- **Docker** : Conteneurisation de l'application pour une exécution et un déploiement simplifiés.
+
+## Fonctionnalités du Site
+1. **Home Page** : Une page d'accueil avec un carrousel des prestations et 3 articles (possibilité d'en ajouter via l'interface admin).
+2. **Page de Contact** : Une page de contact avec un formulaire.
+3. **Page de Mentions Légales** : Une page dédiée aux mentions légales.
+4. **Page Admin** : Une page d'administration pour gérer les contenus.
+
 ## Exécution du code 
 Pour exécuter le projet, utilisez les commandes suivantes :
 
