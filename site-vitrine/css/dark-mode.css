@@ -1,0 +1,112 @@
+/* Mode sombre - chargé conditionnellement */
+body.dark-mode {
+    --primary-color: rgb(221, 68, 68);
+    --primary-dark: rgb(204, 34, 34);
+    --primary-light: rgb(238, 102, 102);
+    --text-color: #e0e0e0;
+    --text-light: #aaa;
+    --bg-color: #121212;
+    --card-bg: #222;
+    --border-color: #444;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Éléments spécifiques en mode sombre */
+  body.dark-mode header {
+    background-color: #1a1a1a;
+  }
+  
+  body.dark-mode .card {
+    background-color: var(--card-bg);
+    border-color: #333;
+  }
+  
+  body.dark-mode .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-dark);
+  }
+  
+  body.dark-mode .btn-outline {
+    border-color: var(--text-light);
+    color: var(--text-light);
+  }
+  
+  body.dark-mode .btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  body.dark-mode input,
+  body.dark-mode textarea,
+  body.dark-mode select {
+    background-color: #333;
+    border-color: #555;
+    color: var(--text-color);
+  }
+  
+  body.dark-mode input::placeholder,
+  body.dark-mode textarea::placeholder {
+    color: #888;
+  }
+  
+  body.dark-mode .accordion-header {
+    background-color: #2a2a2a;
+    border-color: #444;
+  }
+  
+  body.dark-mode .accordion-header.active {
+    background-color: rgb(221, 68, 68)
+  }
+  
+
+  body.dark-mode .accordion-content {
+    background-color: #222;
+    border-color: #444;
+  }
+  
+  body.dark-mode .accordion-header:hover {
+    background-color: #333;
+  }
+
+  body.dark-mode .accordion-header.active:hover {
+    background-color: rgb(204, 34, 34)
+  }
+  
+  body.dark-mode .article-card {
+    background-color: #222;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  body.dark-mode .carousel-item {
+    background-color: #222;
+  }
+  
+  body.dark-mode .carousel-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  
+  body.dark-mode .carousel-indicators button {
+    background-color: #2a2a2a;
+  }
+
+  body.dark-mode .carousel-indicators button.active {
+    background-color: rgb(221, 68, 68);
+  }
+
+  body.dark-mode .eco-info {
+    border-color: #444;
+  }
+  
+  /* Adaptation des liens pour meilleure lisibilité */
+  body.dark-mode a {
+    color: var(--primary-light);
+  }
+  
+  body.dark-mode a:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Amélioration du contraste pour l'accessibilité */
+  body.dark-mode .text-light {
+    color: #bbb;
+  }

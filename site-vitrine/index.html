@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site vitrine écoresponsable développé selon les principes Green IT">
+    <title>Accueil - GreenIT</title>
+    
+    <!-- Styles critiques inlinés pour accélérer le rendu initial -->
+    <style>
+        :root {
+            --primary-color: rgb(204, 34, 34);
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --card-bg: #fff;
+            --border-color: #ddd;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        header, main, footer {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+    </style>
+    
+    <!-- Préchargement des ressources critiques -->
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Cache-Control pour optimiser le cache navigateur -->
+    <meta http-equiv="Cache-Control" content="max-age=86400">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>GreenIT</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" aria-current="page">Accueil</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                    </ul>
+                </nav>
+                <button id="darkModeToggle" aria-label="Activer/désactiver le mode sombre">🌓</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="carousel-section">
+            <div class="container">
+                <h2>Nos prestations</h2>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-item active" id="item1">
+                            <h3>Création de sites écoresponsables</h3>
+                            <p>Développement web optimisé selon les principes du Green IT</p>
+                        </div>
+                        <div class="carousel-item" id="item2">
+                            <h3>Refonte Green IT</h3>
+                            <p>Optimisation de sites existants pour réduire leur impact environnemental</p>
+                        </div>
+                        <div class="carousel-item" id="item3">
+                            <h3>Audits d'écoconception</h3>
+                            <p>Analyse de votre empreinte numérique et recommandations d'améliorations</p>
+                        </div>
+                        <div class="carousel-item" id="item4">
+                            <h3>Formation Green IT</h3>
+                            <p>Ateliers et formations pour vos équipes sur les pratiques écoresponsables</p>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="prev" aria-label="Prestation précédente">←</button>
+                        <button class="next" aria-label="Prestation suivante">→</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="articles-section">
+            <div class="container">
+                <h2>Nos articles</h2>
+                <div class="articles" id="articlesContainer">
+                    <!-- Les articles sont chargés dynamiquement depuis l'API -->
+                    <p class="loading-message">Chargement des articles...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero">
+            <div class="container">
+                <h2>Solution numérique écoresponsable</h2>
+                <p>Découvrez comment réduire l'impact environnemental de votre présence en ligne</p>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Questions fréquentes</h2>
+                <div class="accordion">
+                    <h3 class="accordion-header">Quels sont les avantages de l'écoconception web ?</h3>
+                    <div class="accordion-content">
+                        <p>L'écoconception web présente de nombreux avantages : réduction des coûts d'infrastructure, amélioration des performances, meilleure expérience utilisateur, réduction de l'empreinte carbone, et différenciation concurrentielle. Les sites écoconçus sont plus rapides, plus accessibles et plus durables.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <h3 class="accordion-header">Quelles sont les bonnes pratiques Green IT pour les développeurs ?</h3>
+                    <div class="accordion-content">
+                        <p>Les bonnes pratiques Green IT pour les développeurs incluent : l'optimisation du code, la réduction du poids des pages, l'utilisation du lazy loading, la compression des images et fichiers, la minimisation des requêtes HTTP, l'optimisation des algorithmes, la mise en cache efficace, et l'utilisation de formats d'image modernes comme WebP.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <h3 class="accordion-header">Comment mesurer l'impact environnemental d'un site web ?</h3>
+                    <div class="accordion-content">
+                        <p>Plusieurs outils permettent de mesurer l'impact environnemental d'un site web, notamment EcoIndex, qui évalue les performances environnementales sur une échelle de A à G, et Lighthouse de Google, qui fournit des analyses techniques détaillées. Ces outils mesurent le poids des pages, la complexité du DOM, l'efficacité des requêtes et d'autres facteurs influençant la consommation d'énergie.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <h3 class="accordion-header">Qu'est-ce que le Green IT ?</h3>
+                    <div class="accordion-content">
+                        <p>Le Green IT est une démarche d'amélioration continue qui vise à réduire l'empreinte économique, écologique et sociale du numérique. Cela implique l'optimisation des ressources, la réduction de la consommation d'énergie et l'allongement de la durée de vie des équipements informatiques.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 - GreenIT - Tous droits réservés</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                </ul>
+            </nav>
+            <p class="eco-info">Ce site a été conçu selon les principes de l'écoconception web pour minimiser son impact environnemental.</p>
+        </div>
+    </footer>
+
+    <!-- Chargement différé des scripts non-critiques -->
+    <script src="js/main.js" defer></script>
+    <script src="js/carousel.js" defer></script>
+    <script src="js/accordion.js" defer></script>
+    <script src="js/lazyload.js" defer></script>
+</body>
+</html>

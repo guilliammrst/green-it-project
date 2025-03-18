@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez-nous - Site vitrine écoresponsable développé selon les principes Green IT">
+    <title>Contact - GreenIT</title>
+    
+    <!-- Styles critiques inlinés pour accélérer le rendu initial -->
+    <style>
+        :root {
+            --primary-color: rgb(204, 34, 34);
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --card-bg: #fff;
+            --border-color: #ddd;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        header, main, footer {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+    </style>
+    
+    <!-- Préchargement des ressources critiques -->
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Cache-Control pour optimiser le cache navigateur -->
+    <meta http-equiv="Cache-Control" content="max-age=86400">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>GreenIT</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="contact.html" aria-current="page">Contact</a></li>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                    </ul>
+                </nav>
+                <button id="darkModeToggle" aria-label="Activer/désactiver le mode sombre">🌓</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Contactez-nous</h2>
+                <p>Vous avez des questions sur nos services d'écoconception web ? Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Informations</h3>
+                        <p><strong>Adresse :</strong> 123 Rue de l'Écoconception, 75000 Paris</p>
+                        <p><strong>Email :</strong> contact@greenit-example.fr</p>
+                        <p><strong>Téléphone :</strong> 01 23 45 67 89</p>
+                        <p class="eco-tip"><strong>🌿 Astuce éco :</strong> Privilégiez le contact par email plutôt que par téléphone pour réduire votre empreinte carbone.</p>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Adresse e-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                        </div>
+                        
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 - GreenIT - Tous droits réservés</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                </ul>
+            </nav>
+            <p class="eco-info">Ce site a été conçu selon les principes de l'écoconception web pour minimiser son impact environnemental.</p>
+        </div>
+    </footer>
+
+    <!-- Chargement différé des scripts non-critiques -->
+    <script src="js/main.js" defer></script>
+    <script src="js/contact.js" defer></script>
+</body>
+</html>

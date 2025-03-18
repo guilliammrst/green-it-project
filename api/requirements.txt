@@ -1,0 +1,10 @@
+# Core web framework
+Flask==2.3.3
+Flask-Cors==4.0.0
+
+# Image processing (for the optimize-image endpoint)
+Pillow==10.1.0
+
+# Database
+psycopg2-binary==2.9.5
+SQLAlchemy==2.0.19

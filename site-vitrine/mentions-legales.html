@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mentions légales - Site vitrine écoresponsable développé selon les principes Green IT">
+    <title>Mentions légales - GreenIT</title>
+    
+    <!-- Styles critiques inlinés pour accélérer le rendu initial -->
+    <style>
+        :root {
+            --primary-color: rgb(204, 34, 34);
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --card-bg: #fff;
+            --border-color: #ddd;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        header, main, footer {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+    </style>
+    
+    <!-- Préchargement des ressources critiques -->
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Cache-Control pour optimiser le cache navigateur -->
+    <meta http-equiv="Cache-Control" content="max-age=86400">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>GreenIT</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mentions-legales.html" aria-current="page">Mentions légales</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                    </ul>
+                </nav>
+                <button id="darkModeToggle" aria-label="Activer/désactiver le mode sombre">🌓</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Mentions légales</h2>
+            </div>
+        </section>
+
+        <section class="legal-section">
+            <div class="container">
+                <div class="legal-content">
+                    <article>
+                        <h3>Éditeur du site</h3>
+                        <p>
+                            Site GreenIT<br>
+                            123 Rue de l'Écoconception<br>
+                            75000 Paris, France<br>
+                            SIRET : 123 456 789 00012<br>
+                            Téléphone : 01 23 45 67 89<br>
+                            Email : contact@greenit-example.fr
+                        </p>
+                        <p>Directeur de la publication : Jane Doe</p>
+                    </article>
+
+                    <article>
+                        <h3>Hébergement</h3>
+                        <p>
+                            Ce site est hébergé par Example Green Hosting, société spécialisée dans l'hébergement écoresponsable utilisant des énergies 100% renouvelables.<br>
+                            123 Rue des Serveurs Verts<br>
+                            75000 Paris, France
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Propriété intellectuelle</h3>
+                        <p>L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés. La reproduction de tout ou partie de ce site sur un support électronique ou autre est formellement interdite sauf autorisation expresse du directeur de la publication.</p>
+                    </article>
+
+                    <article>
+                        <h3>Protection des données personnelles</h3>
+                        <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification, d'effacement et de portabilité de vos données personnelles. Pour exercer ces droits, veuillez nous contacter par email à l'adresse : rgpd@greenit-example.fr</p>
+                        <p>Les informations recueillies via notre formulaire de contact sont utilisées uniquement pour répondre à vos demandes et ne sont en aucun cas transmises à des tiers.</p>
+                    </article>
+
+                    <article>
+                        <h3>Cookies</h3>
+                        <p>Ce site utilise des cookies techniques essentiels au fonctionnement du site et à l'amélioration de votre expérience. Ces cookies sont conçus pour avoir un impact minimal sur votre vie privée et sur l'environnement (stockage limité, durée de vie courte).</p>
+                    </article>
+
+                    <article>
+                        <h3>Démarche écoresponsable</h3>
+                        <p>Dans le cadre de notre engagement pour un numérique plus durable, ce site a été conçu selon les principes de l'écoconception web :</p>
+                        <ul>
+                            <li>Développement minimaliste et optimisé</li>
+                            <li>Utilisation de technologies natives et légères</li>
+                            <li>Optimisation des images et contenus</li>
+                            <li>Hébergement alimenté par des énergies renouvelables</li>
+                            <li>Minimisation des requêtes serveur et de la consommation de bande passante</li>
+                        </ul>
+                        <p>Notre score EcoIndex est régulièrement surveillé pour maintenir les meilleures performances environnementales possibles.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 - GreenIT - Tous droits réservés</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                </ul>
+            </nav>
+            <p class="eco-info">Ce site a été conçu selon les principes de l'écoconception web pour minimiser son impact environnemental.</p>
+        </div>
+    </footer>
+
+    <!-- Chargement différé des scripts non-critiques -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>

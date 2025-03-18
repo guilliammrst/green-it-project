@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  api:
+    build: ./api
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./api:/app
+      - ./site-vitrine:/site-vitrine
+    environment:
+      - DATABASE_URL=postgresql://greenit:password@db:5432/greenit_db
+      - FLASK_ENV=development
+    depends_on:
+      - db
+    networks:
+      - green-network
+    restart: on-failure
+    command: sh -c "apt-get update && apt-get install -y postgresql-client && until PGPASSWORD=password psql -h db -U greenit -d greenit_db -c 'SELECT 1;' > /dev/null 2>&1; do echo 'En attente de PostgreSQL...'; sleep 2; done && python app.py"
+
+  db:
+    image: postgres:13-alpine 
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=greenit
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=greenit_db
+    ports:
+      - "5432:5432"
+    networks:
+      - green-network
+    command: postgres -c shared_buffers=128MB -c max_connections=20
+
+networks:
+  green-network:
+    driver: bridge
+
+volumes:
+  postgres_data: 
